@@ -29,3 +29,6 @@ sp_oauth = SpotifyOAuth(
         "playlist-read-private playlist-modify-private playlist-modify-public"
     )
 )
+
+# Configue logging
+logging.basicConfig(level=logging.INFO)
