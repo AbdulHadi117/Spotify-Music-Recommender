@@ -8,3 +8,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 app = Flask(__name__)
+
+# Set the secret key for session management
+app.secret_key = os.getenv("FLASK_SECRET_KEY")
+app.config["SESSION_COOKIE_NAME"] = "Spotify Music Recommender"
